@@ -18,3 +18,9 @@ If everything has worked, this python code snippet shouldn't give any errors:
 from pytorch_transformers import BertModel
 model = BertModel.from_pretrained('biobert')
 ```
+
+### Training
+
+```
+nohup python 02_train.py > train.out &
+```
