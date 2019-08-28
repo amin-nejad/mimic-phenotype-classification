@@ -12,6 +12,8 @@ from fast_bert.learner_cls import BertLearner
 from fast_bert.metrics import accuracy_multilabel, accuracy_thresh, fbeta, roc_auc
 from fast_bert.prediction import BertClassificationPredictor
 
+model = 'gpt2' # change as appropriate
+
 BASE = Path('data/phenotype_classification/')
 LABEL_PATH = BASE
 
@@ -104,6 +106,7 @@ def train(path_to_directory, model):
     
     return
 
-for directory in ['original','original_2x','synthetic','combined','original_eda']:
-    for model in ['biobert','bert']:
-        train('transformer/'+directory, model)
+#for directory in ['original','original_2x','synthetic','combined','original_eda']:
+for directory in ['synthetic','combined']:
+    for bert_model in ['biobert','bert']:
+        train(model+'/'+directory, bert_model)
