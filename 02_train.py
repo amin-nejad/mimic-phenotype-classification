@@ -12,9 +12,9 @@ from fast_bert.learner_cls import BertLearner
 from fast_bert.metrics import accuracy_multilabel, accuracy_thresh, fbeta, roc_auc
 from fast_bert.prediction import BertClassificationPredictor
 
-model = 'gpt2' # change as appropriate
+model = 'transformer' # change as appropriate
 
-BASE = Path('data/phenotype_classification/')
+BASE = Path('data/phenotype_classification/low_resource')
 LABEL_PATH = BASE
 
 # check if (multiple) GPUs are available
