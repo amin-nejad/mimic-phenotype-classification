@@ -1,6 +1,18 @@
 # mimic-phenotype-classification
 
-Working repository for Master's project. Downstream task for artificial data created in [mimic-text-generation](https://github.com/amin-nejad/mimic-text-generation)
+This repository contains the code for the downstream classification task. Follow the steps below:
+
+
+1. Install the environment
+```
+conda env create -f environment.yml
+```
+2. Run the files sequentially. This assumes you have already run the text generation models and generated synthetic data
+3. You may find it useful to run the training script as follows:
+```
+nohup python 02_train.py > train.out &
+```
+4. You must install BioBERT separately as instructed below
 
 ### BioBERT
 
@@ -17,10 +29,4 @@ If everything has worked, this python code snippet shouldn't give any errors:
 ```python
 from pytorch_transformers import BertModel
 model = BertModel.from_pretrained('biobert')
-```
-
-### Training
-
-```
-nohup python 02_train.py > train.out &
 ```
