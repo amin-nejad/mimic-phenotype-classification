@@ -1,6 +1,8 @@
 # mimic-phenotype-classification
 
-This repository contains the code for a downstream classification task related to models trained using https://github.com/amin-nejad/mimic-text-generation. Follow the steps below:
+This repository contains the code for a downstream classification task related to models trained using https://github.com/amin-nejad/mimic-text-generation. The task is a multilabel classification problem predicting the phenotypes exhibited by a curated subset of patients from MIMIC-III as per https://github.com/sebastianGehrmann/phenotyping. 
+
+Follow the steps below:
 
 
 1. Install the environment
