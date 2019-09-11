@@ -1,6 +1,6 @@
 # mimic-phenotype-classification
 
-This repository contains the code for the downstream classification task. Follow the steps below:
+This repository contains the code for a downstream classification task related to models trained using https://github.com/amin-nejad/mimic-text-generation. Follow the steps below:
 
 
 1. Install the environment
